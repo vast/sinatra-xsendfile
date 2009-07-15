@@ -25,7 +25,8 @@ spec = Gem::Specification.new do |s|
 
   s.add_development_dependency 'rack-test', '>=0.3.0'
 
-  s.files = ["LICENSE", "README.md", "Rakefile"] + Dir.glob('{lib,test}/**/*')
+  s.files = ["LICENSE", "README.md", "Rakefile"] + Dir.glob('lib/**/*')
+  s.test_files = Dir.glob('test/*')
 end
 
 task :default => :test
