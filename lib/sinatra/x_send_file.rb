@@ -18,6 +18,8 @@ module Sinatra
 
       header_key = opts[:header] || (Sinatra::Application.respond_to?(:xsf_header) && Sinatra::Application.xsf_header) ||
                                     'X-SendFile'
+      path = File.expand_path(path).gsub(Sinatra::Application.public, '') if header_key == 'X-Accel-Redirect'
+
       response[header_key] = path
 
       halt
