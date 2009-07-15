@@ -24,6 +24,11 @@ module Sinatra
     rescue Errno::ENOENT
       not_found
     end
+
+    def self.replace_send_file!
+      Sinatra::Helpers.send(:alias_method, :old_send_file, :send_file)
+      Sinatra::Helpers.module_eval("def send_file(path, opts={}); x_send_file(path, opts); end;")
+    end
   end
 
   helpers XSendFile
