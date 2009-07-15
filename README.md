@@ -11,6 +11,7 @@
 ##Example
     require 'rubygems'
     require 'sinatra'
+    gem 'vast-sinatra-xsendfile'
     require 'sinatra/x_send_file'
 
     configure :production do
