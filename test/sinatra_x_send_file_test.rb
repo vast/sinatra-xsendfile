@@ -31,8 +31,4 @@ class SinatraXSendFileTest < Test::Unit::TestCase
     assert_not_nil last_response.headers['x-test-send-file']
   end
 
-  def test_sendfile_overriding
-    get '/sendfile'
-    assert_not_nil last_response.headers['x-test-send-file']
-  end
 end

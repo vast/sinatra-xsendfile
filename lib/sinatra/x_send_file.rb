@@ -3,8 +3,6 @@ module Sinatra
 
   module XSendFile
     def x_send_file(path, opts = {})
-      stat = File.stat(path)
-
       content_type media_type(opts[:type]) ||
               media_type(File.extname(path)) ||
               response['Content-Type'] ||
