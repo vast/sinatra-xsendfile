@@ -3,8 +3,8 @@ module Sinatra
 
   module XSendFile
     def x_send_file(path, opts = {})
-      content_type media_type(opts[:type]) ||
-              media_type(File.extname(path)) ||
+      content_type mime_type(opts[:type]) ||
+              mime_type(File.extname(path)) ||
               response['Content-Type'] ||
               'application/octet-stream'
 
