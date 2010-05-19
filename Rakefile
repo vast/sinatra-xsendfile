@@ -8,7 +8,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
     gemspec.name = "sinatra-xsendfile"
-    gemspec.version = "0.2.1"
+    gemspec.version = "0.2.2"
     gemspec.summary = gemspec.description = "X-SendFile helpers for Sinatra"
     gemspec.email = "vasily@polovnyov.ru"
     gemspec.homepage = "http://github.com/vast/sinatra-xsendfile"
