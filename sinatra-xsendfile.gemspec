@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sinatra-xsendfile}
-  s.version = "0.2.1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Vasily Polovnyov"]
-  s.date = %q{2010-03-24}
+  s.date = %q{2010-05-19}
   s.description = %q{X-SendFile helpers for Sinatra}
   s.email = %q{vasily@polovnyov.ru}
   s.extra_rdoc_files = [
