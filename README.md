@@ -11,10 +11,10 @@
 ##Example
     require 'rubygems'
     require 'sinatra'
-    require 'sinatra/x_send_file'
+    require 'sinatra-xsendfile'
 
     configure :production do
-      Sinatra::XSendFile.replace_send_file! #replaces sinatra's send_file with x_send_file
+      Sinatra::Xsendfile.replace_send_file! #replaces sinatra's send_file with x_send_file
       set :xsf_header, 'X-Accel-Redirect' #setting default(X-SendFile) header (nginx)
     end
 
