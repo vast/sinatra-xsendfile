@@ -20,13 +20,13 @@ Gem::Specification.new do |s|
     "LICENSE",
     "README.md",
     "Rakefile",
-    "lib/sinatra-xsendfile/sinatra-xsendfile/version.rb",
-    "lib/sinatra-xsendfile/sinatra-xsendfile.rb",
+    "lib/sinatra-xsendfile/version.rb",
+    "lib/sinatra-xsendfile.rb",
     "test/sinatra_app.rb",
     "test/sinatra_xsendfile_test.rb"
   ]
   s.test_files = [
-    "test/sinatra_x_send_file_test.rb",
+    "test/sinatra_xsendfile_test.rb",
     "test/sinatra_app.rb"
   ]
 
