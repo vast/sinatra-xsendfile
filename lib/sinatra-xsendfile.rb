@@ -1,6 +1,5 @@
-require 'sinatra/base'
 module Sinatra
-  module XSendFile
+  module Xsendfile
     def x_send_file(path, opts = {})
       if opts[:type] or not response['Content-Type']
         content_type(opts[:type] || File.extname(path) || 'application/octet-stream')
@@ -29,5 +28,5 @@ module Sinatra
     end
   end
 
-  helpers XSendFile
+  helpers Xsendfile
 end

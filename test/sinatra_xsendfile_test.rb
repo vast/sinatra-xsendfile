@@ -4,7 +4,7 @@ require 'rack/test'
 
 set :environment, :test
 
-class SinatraXSendFileTest < Test::Unit::TestCase
+class SinatraXsendfileTest < Test::Unit::TestCase
   include Rack::Test::Methods
 
   def app

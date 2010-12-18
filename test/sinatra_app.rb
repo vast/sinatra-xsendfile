@@ -1,11 +1,11 @@
 require 'rubygems'
 require 'sinatra'
-require 'lib/sinatra/x_send_file'
+require 'lib/sinatra-xsendfile'
 
 
 set :xsf_header, 'x-test-send-file'
 
-Sinatra::XSendFile.replace_send_file!
+Sinatra::Xsendfile.replace_send_file!
 
 get '/' do
   x_send_file(__FILE__)
