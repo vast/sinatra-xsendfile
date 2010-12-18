@@ -2,10 +2,9 @@ require 'sinatra/base'
 module Sinatra
   module XSendFile
     def x_send_file(path, opts = {})
-      content_type _mime_type(opts[:type]) ||
-              _mime_type(File.extname(path)) ||
-              response['Content-Type'] ||
-              'application/octet-stream'
+      if opts[:type] or not response['Content-Type']
+        content_type(opts[:type] || File.extname(path) || 'application/octet-stream')
+      end
 
       if opts[:disposition] == 'attachment' || opts[:filename]
         attachment opts[:filename] || path
@@ -22,14 +21,6 @@ module Sinatra
       halt
     rescue Errno::ENOENT
       not_found
-    end
-
-    def _mime_type(type)
-      if respond_to?(:mime_type)
-	mime_type(type)
-      else
-	media_type(type)
-      end
     end
 
     def self.replace_send_file!
