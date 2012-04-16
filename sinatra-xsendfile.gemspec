@@ -1,5 +1,5 @@
 $:.push File.expand_path("../lib", __FILE__)
-require "sinatra-xsendfile/version"
+require "sinatra/xsendfile/version"
 
 Gem::Specification.new do |s|
   s.name = %q{sinatra-xsendfile}
@@ -20,8 +20,8 @@ Gem::Specification.new do |s|
     "LICENSE",
     "README.md",
     "Rakefile",
-    "lib/sinatra-xsendfile/version.rb",
-    "lib/sinatra-xsendfile.rb",
+    "lib/sinatra/xsendfile/version.rb",
+    "lib/sinatra/xsendfile.rb",
     "test/sinatra_app.rb",
     "test/sinatra_xsendfile_test.rb"
   ]

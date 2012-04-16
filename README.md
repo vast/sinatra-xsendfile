@@ -26,7 +26,7 @@ Otherwise install the gem as usual:
 ##Example
     require 'rubygems'
     require 'sinatra'
-    require 'sinatra-xsendfile'
+    require 'sinatra/xsendfile'
 
     configure :production do
       Sinatra::Xsendfile.replace_send_file! # replace Sinatra's send_file with x_send_file
