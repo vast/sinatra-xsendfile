@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.version = Sinatra::Xsendfile::VERSION
 
   s.authors = ["Vasily Polovnyov"]
-  s.date = %q{2012-4-16}
+  s.license = 'MIT'
   s.summary = s.description = %q{X-SendFile helper for Sinatra}
   s.email = %q{vasily@polovnyov.ru}
   s.homepage = %q{http://github.com/vast/sinatra-xsendfile}
