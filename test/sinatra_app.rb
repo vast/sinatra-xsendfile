@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-require 'lib/sinatra/xsendfile'
-
+require './lib/sinatra/xsendfile'
 
 set :xsf_header, 'x-test-send-file'
 
