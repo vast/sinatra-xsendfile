@@ -2,7 +2,7 @@ module Sinatra
   module Xsendfile
     def x_send_file(path, opts = {})
       if opts[:type] or not response['Content-Type']
-        content_type(opts[:type] || File.extname(path) || 'application/octet-stream')
+        content_type(opts[:type] || File.extname(path), :default => 'application/octet-stream')
       end
 
       if opts[:disposition] == 'attachment' || opts[:filename]
