@@ -43,7 +43,7 @@ get '/' do
 end
 
 get '/lighttpd' do
-  x_send_file(__FILE__, :header => 'X-LIGHTTPD-send-file') # custom header
+  x_send_file(__FILE__, header: 'X-LIGHTTPD-send-file') # custom header
 end
 
 get '/sendfile' do
