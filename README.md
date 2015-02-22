@@ -1,6 +1,8 @@
-#Sinatra Extension: XSendFile
+# Sinatra Extension: XSendFile
 
 `sinatra-xsendfile` extension provides `x_send_file` helper method for sending files faster
+
+_NOTE_: `sinatra-xsendfile` is no longer supported. Consider using [Rack::Sendfile](https://github.com/rack/rack/blob/master/lib/rack/sendfile.rb) instead.
 
 
 ##XSendFile
